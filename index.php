@@ -32,7 +32,6 @@
     <h2 class="display-3 text-center">Tools Summary</h2>
   </div>
   <div class="tools-summary">
-    
     <div class="tool-card">
       <div class="tool-header">
         <img src="assets/images/pliers.png" alt="" class="img-fluid">
@@ -46,7 +45,48 @@
       </div>
     </div>
 
+    <div class="tool-card">
+      <div class="tool-header">
+        <img src="assets/images/pliers.png" alt="" class="img-fluid">
+        <div class="layer">
+            <a href="https://karu.ac.ke/" target="_blank"><h3>PLIERS</h3></a>
+        </div>
+      </div>
+      <div class="tool-card-content py-2">
+        <h4 class="tool-name text-sm">In stock:&nbsp <span>75</span></h2>
+        <h4 class="tool-qty text-sm">ISSUED:&nbsp <span>12</span></h2>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-header">
+        <img src="assets/images/pliers.png" alt="" class="img-fluid">
+        <div class="layer">
+            <a href="https://karu.ac.ke/" target="_blank"><h3>PLIERS</h3></a>
+        </div>
+      </div>
+      <div class="tool-card-content py-2">
+        <h4 class="tool-name text-sm">In stock:&nbsp <span>75</span></h2>
+        <h4 class="tool-qty text-sm">ISSUED:&nbsp <span>12</span></h2>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <div class="tool-header">
+        <img src="assets/images/pliers.png" alt="" class="img-fluid">
+        <div class="layer">
+            <a href="https://karu.ac.ke/" target="_blank"><h3>PLIERS</h3></a>
+        </div>
+      </div>
+      <div class="tool-card-content py-2">
+        <h4 class="tool-name text-sm">In stock:&nbsp <span>75</span></h2>
+        <h4 class="tool-qty text-sm">ISSUED:&nbsp <span>12</span></h2>
+      </div>
+    </div>
+
+
   </div>
+  
 </div>
 
 
