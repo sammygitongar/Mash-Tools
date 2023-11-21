@@ -21,8 +21,8 @@
     <h1 class="display-4 text-center py-4">REGISTRATION</h1>
   </div>
   <div class="registration-content py-3">
-    <a class="btn btn-outline-secondary mb-3" href="#">Register a User</a>
-    <a class="btn btn-outline-secondary mb-3" href="#">Register a Tool</a>
+    <a class="btn btn-outline-secondary mb-3" href="user_reg.php">Register a User</a>
+    <a class="btn btn-outline-secondary mb-3" href="tools_reg.php">Register a Tool</a>
   </div>
 </div>
 

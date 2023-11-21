@@ -123,6 +123,8 @@
     justify-self: center;
 }
 
+
+
 .layer{
     background: 0;
     height: 100%;
@@ -201,6 +203,11 @@
     border-radius: 50%;
     margin: 42px 0;
     border: 3px solid rgb(19, 46, 46);
+    transition: .5s ease;
+}
+
+.userhead img:hover{
+    border-radius: 10px;
 }
 
 .user-form form{
@@ -243,4 +250,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* ============Tools CSS============== */
+
+form #picture{
+    display: none;
+}
+
+form label{
+    text-transform: uppercase;
+    background: rgb(56, 83, 75);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.473);
+    border: 1px solid rgb(56, 83, 75);
+    font-weight: 600;
+    transition: .5s ease;
+    font-size: calc(10px + .5vw);
+}
+
+form label:hover{
+    background: none;
+    color: rgb(56, 83, 75);
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.226);
+}
+
+form label i{
+    padding: 0 10px;
 }
