@@ -227,7 +227,7 @@
 
 .user-form form button{
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 15px;
     border: 1px soild rgb(12, 43, 37);
     font-size: 17px;
@@ -236,7 +236,9 @@
     color: white;
     margin-bottom: 20px;
     transition: 1s ease;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.473);
 }
+
 
 .user-form form button:hover{
     background: none;

@@ -27,7 +27,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Issue Tools</a>
@@ -37,11 +37,11 @@
               New Registration
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Tool Registration</a></li>
+              <li><a class="dropdown-item" href="tools_reg.php">Tool Registration</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Worker Registration</a></li>
+              <li><a class="dropdown-item" href="user_reg.php">Worker Registration</a></li>
             </ul>
           </li>
         </ul>
