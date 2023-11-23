@@ -8,15 +8,27 @@
             <img src="assets/images/tool.png" alt="">
             <h3>Register a new Tool</h3>
         </div>
-        <form action="handlers/tool_handler.php" method="post">
-            <input type="text" name="name" placeholder="Tool Name">
-            <input type="number" name="stock" placeholder="Toosl in Stock (e.g. 100)" pattern="[0-9]{}" title="Please enter a valid number)" required>
+        <form action="handlers/tool_handler.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="tname" placeholder="Tool Name">
+            <input type="number" name="stock" placeholder="Toosl in Stock (e.g. 100)" pattern="[0-9]{}" title="Please enter a valid number)">
             <label for="picture"><i class="uil uil-file-upload-alt"></i>Upload File</label>
-            <input type="file" name="picture" id="picture" accept="image/*">
+            <input type="file" name="picture" id="picture" accept="image/*" required>
             <button type="submit">SUBMIT</button>
+            
+            <!-- <div id="upload-error">
+                <i class="uil uil-times"></i>
+                <p>Please upload the image of your tool</p>
+            </div> -->
         </form>
     </div>
 </section>
+
+
+
+
+<script src="index.js">
+
+</script>
 
 
 

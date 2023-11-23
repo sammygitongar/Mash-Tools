@@ -283,3 +283,49 @@ form label:hover{
 form label i{
     padding: 0 10px;
 }
+
+
+
+/* ==============Tools Form Handler CSS================ */
+.upload-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 13px;
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.309);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.upload-error i{
+    position: absolute;
+    color: black;
+    padding: .5px 2px;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    background: grey;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.upload-error i:hover{
+    background: none;
+}
+
+.upload-error p{
+    font-family: 'Inter', sans-serif;
+    /* text-align: center; */
+    margin-top: 10px;
+    margin-right: 10px;
+    color: red;
+
+}
