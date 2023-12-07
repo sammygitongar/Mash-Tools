@@ -1,0 +1,203 @@
+.issuance-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1c343b17;
+    margin-top: 30px;
+    padding: 0 30px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(10px);
+    width: 40vw;
+    justify-content: space-around;
+    
+}
+
+
+
+.issuehead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.issuehead img{
+    width: 15vw;
+    border-radius: 50%;
+    margin: 42px 0;
+    border: 3px solid rgb(187, 247, 187);
+    transition: .5s ease;
+    background: beige;
+}
+
+.issuehead img:hover{
+    transform: scale(1.2);
+    background: rgb(187, 247, 187); 
+}
+
+
+
+.user-section{
+    display: flex;
+    margin-top: -100px;
+    width: 30vw;
+    justify-content: space-between;
+    background: #1c343b17;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+
+@media(max-width: 800px){
+    .issuance-form{
+        width: 80vw;
+    }
+
+    .issuehead img{
+        width: 50vw;
+    }
+
+    .user-section{
+        width: 70vw;
+    }
+
+}
+
+.user-section select{
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background: rgba(207, 240, 232, 0.29);
+}
+
+.user-section label{
+    font-size: 18px;
+    font-weight: 700;
+    color: cadetblue;
+}
+
+
+
+
+
+
+
+
+.issuance-form-container{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+}
+
+.tools-section select{
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background: rgba(207, 240, 232, 0.29);
+    margin-left: 10px;
+
+}
+
+.tools-section{
+    display: flex;
+    justify-content: space-between;
+    background: #1c343b17;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.tools-section .qty input{
+    width: 30px;
+    -moz-appearance: textfield;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(207, 240, 232, 0.29);
+
+}
+
+@media(max-width: 750px){
+    .tools-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qty{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        margin: 10px 0;
+
+    }
+
+    .qty input{
+        margin-right: 40px;
+    }
+
+    .tools-section button{
+        width: 50px;
+        justify-self: center;
+    }
+
+}
+
+.tools-section button{
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid green;
+    font-weight: 600;
+    transition: .4s ease;
+    background: rgba(207, 240, 232, 0.29);
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.qty-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tools-section button:hover{
+    background: green;
+    color: white;
+}
+
+.tools-section label{
+    font-size: 18px;
+    font-weight: 700;
+    color: cadetblue;
+}
+
+
+
+/* CSS to hide the number input spinner arrows */
+.tools-section .qty input::-webkit-inner-spin-button,
+.tools-section .qty input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+
+/* ===========Footer CSS=========== */
+.footer{
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 1em;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.301);
+    font-size: calc(10px + .5vw);
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.486);
+
+}

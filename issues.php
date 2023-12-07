@@ -30,7 +30,7 @@
 
         .issuehead img{
             width: 20vw;
-            border-radius: 50%;
+            border-radius: 20%;
             margin: 42px 0;
             border: 3px solid rgb(19, 46, 46);
             transition: .5s ease;
@@ -49,6 +49,18 @@
                 width: 50vw;
             }
 
+        }
+
+        .issuance-user{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+
+        .issuance-tools{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
         }
 
 
@@ -72,30 +84,37 @@
         <!-- User Selection -->
        <div class="issuance-user">
         <label for="userSelect">Select User:</label>
-            <select id="userSelect" name="user">
-                <option value="user1">User 1</option>
-                <option value="user2">User 2</option>
-                <option value="user3">User 3</option>
-            </select>
-            <button class="select-user">Select</button>
+            <div class="issuance-user-contents">
+                <select id="userSelect" name="user">
+                    <option value="user1">User 1</option>
+                    <option value="user2">User 2</option>
+                    <option value="user3">User 3</option>
+                </select>
+                <p class="select-user" id="select-btn" onclick="selectUser()">Select</p>
+            </div>
        </div>
+
+    
 
         <!-- Tools Selection -->
         <div class="issuance-tools">
-            <label for="toolsSelect">Select Tools (up to 10):</label>
-            <select id="toolsSelect" name="tools[]">
-                <option value="hammer">Hammer</option>
-                <option value="screwdriver">Screwdriver</option>
-                <option value="pliers">Pliers</option>
-                <option value="wrench">Wrench</option>
-                <option value="tape-measure">Tape Measure</option>
-                <option value="drill">Drill</option>
-                <option value="saw">Saw</option>
-                <option value="level">Level</option>
-                <option value="safety-goggles">Safety Goggles</option>
-                <option value="utility-knife">Utility Knife</option>
-            </select>
-            <input type="number" placeholder="Enter Quantity">
+            <label for="toolsSelect">Select Tools</label>
+            <div class="issuance-tools-contents">
+                <select id="toolsSelect" name="tools[]">
+                    <option value="hammer">Hammer</option>
+                    <option value="screwdriver">Screwdriver</option>
+                    <option value="pliers">Pliers</option>
+                    <option value="wrench">Wrench</option>
+                    <option value="tape-measure">Tape Measure</option>
+                    <option value="drill">Drill</option>
+                    <option value="saw">Saw</option>
+                    <option value="level">Level</option>
+                    <option value="safety-goggles">Safety Goggles</option>
+                    <option value="utility-knife">Utility Knife</option>
+                </select>
+                <input type="number" placeholder="Enter Quantity">
+                <button type="button">Add tool</button>
+            </div>
         </div>
 
 
@@ -110,6 +129,9 @@
 
 
 
+  <script>
+     
+    </script>
 
 
 

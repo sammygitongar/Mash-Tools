@@ -14,6 +14,11 @@
             <label for="picture"><i class="uil uil-file-upload-alt"></i>Upload File</label>
             <input type="file" name="picture" id="picture" accept="image/*" required>
             <button type="submit">SUBMIT</button>
+            
+            <!-- <div id="upload-error">
+                <i class="uil uil-times"></i>
+                <p>Please upload the image of your tool</p>
+            </div> -->
         </form>
     </div>
 </section>
