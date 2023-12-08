@@ -1,19 +1,22 @@
+.issuance-form-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
 .issuance-form{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background: #1c343b17;
-    margin-top: 30px;
-    padding: 0 30px;
-    border-radius: 20px;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.199);
-    backdrop-filter: blur(10px);
     width: 40vw;
-    justify-content: space-around;
-    
+    background: #e1dcdc;
+    margin: 20px;
+    margin-top: 70px;
+    border-radius: 25px;
 }
 
 
+/* ==============Issuehead==================== */
 
 .issuehead{
     display: flex;
@@ -21,174 +24,169 @@
     align-items: center;
 }
 
+.issuehead h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
 .issuehead img{
-    width: 15vw;
+    width: 20vw;
+    border: 2px solid rgba(137, 137, 143, 0.794);
+    margin: 30px 0;
     border-radius: 50%;
-    margin: 42px 0;
-    border: 3px solid rgb(187, 247, 187);
-    transition: .5s ease;
-    background: beige;
+    transition: .3s ease;
 }
 
 .issuehead img:hover{
-    transform: scale(1.2);
-    background: rgb(187, 247, 187); 
+    background: rgba(137, 137, 143, 0.794);
 }
 
-
-
-.user-section{
-    display: flex;
-    margin-top: -100px;
-    width: 30vw;
-    justify-content: space-between;
-    background: #1c343b17;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    
-}
-
-@media(max-width: 800px){
+@media(max-width:720px){
     .issuance-form{
         width: 80vw;
     }
 
     .issuehead img{
-        width: 50vw;
+        width: 60vw;
     }
-
-    .user-section{
-        width: 70vw;
-    }
-
 }
 
-.user-section select{
-    padding: 3px 10px;
-    border-radius: 10px;
-    border: 1px solid green;
-    background: rgba(207, 240, 232, 0.29);
+.form-contents{
+    width: 30vw;
+}
+
+@media(max-width:720px){
+    .form-contents{
+        width: 70vw;
+    }
+}
+
+.user-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+    background: #a1a1a1;
+    margin: 20px 0;
+    border-radius: 15px;
 }
 
 .user-section label{
-    font-size: 18px;
+    color: rgb(26, 93, 95);
     font-weight: 700;
-    color: cadetblue;
+    font-size: 18px;
 }
 
-
-
-
-
-
-
-
-.issuance-form-container{
-    min-height: 100vh;
-    display:flex;
-    justify-content:center;
-}
-
-.tools-section select{
-    padding: 3px 10px;
+.user-section select{ 
+    border: 2px solid rgb(26, 93, 95);
+    background: #e1dcdc;
+    padding: 5px;
     border-radius: 10px;
-    border: 1px solid green;
-    background: rgba(207, 240, 232, 0.29);
-    margin-left: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
 
+
+
+
+
+
+
+
+
+
+
+.qty input{
+    width: 30px;
 }
 
 .tools-section{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-container{
+    display: flex;
     justify-content: space-between;
-    background: #1c343b17;
-    padding: 20px;
+    width: 100%;
+    background: #a1a1a1;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.tool-container label{
+    color: rgb(26, 93, 95);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.tool-container select{ 
+    border: 2px solid rgb(26, 93, 95);
+    background: #e1dcdc;
+    padding: 5px;
     border-radius: 10px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.tools-section .qty input{
-    width: 30px;
-    -moz-appearance: textfield;
-    border: 1px solid green;
-    border-radius: 5px;
-    text-align: center;
-    background: rgba(207, 240, 232, 0.29);
-
-}
-
-@media(max-width: 750px){
-    .tools-section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .qty{
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-        margin: 10px 0;
-
-    }
-
-    .qty input{
-        margin-right: 40px;
-    }
-
-    .tools-section button{
-        width: 50px;
-        justify-self: center;
-    }
-
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .tools-section button{
-    padding: 5px 10px;
-    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
     border-radius: 10px;
-    border: 1px solid green;
-    font-weight: 600;
+    border: 1px solid rgb(26, 93, 95);
+    background: rgb(26, 93, 95);
+    color: #e1dcdc;
+    padding: 5px 15px;
     transition: .4s ease;
-    background: rgba(207, 240, 232, 0.29);
-    justify-self: center;
-    margin-top: 20px;
-}
-
-.qty-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .tools-section button:hover{
-    background: green;
-    color: white;
-}
-
-.tools-section label{
-    font-size: 18px;
-    font-weight: 700;
-    color: cadetblue;
+    background: none;
+    color: rgb(26, 93, 95);
 }
 
 
+/* ==================Selected Tools CSS==================== */
+.selected-tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background:#a1a1a1;
+    width: 100%;
+    border-radius: 15px;
+}
 
-/* CSS to hide the number input spinner arrows */
-.tools-section .qty input::-webkit-inner-spin-button,
-.tools-section .qty input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.selected-tools h4{
+    color: rgb(26, 93, 95);
+}
+
+.selected-tools .selected-tools-inner{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.selected-tools .selected-tools-inner #selected-qty{
+    width: 30px;
+    text-align: center;
+}
+
+.selected-tools input{
+    border: none;
+    background: #e2d8d89a;
+    border-radius: 10px;
+}
+
+.selected-tools input::-webkit-inner-spin-button, .selected-tools input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
 }
 
 
 
-
-
-/* ===========Footer CSS=========== */
 .footer{
     display: flex;
     justify-content: center;  
