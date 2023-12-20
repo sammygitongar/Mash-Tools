@@ -36,7 +36,7 @@
       <div class="tool-header">
         <img src="assets/images/pliers.png" alt="" class="img-fluid">
         <div class="layer">
-            <a href="https://karu.ac.ke/" target="_blank"><h3>PLIERS</h3></a>
+            <a href="#"><h3>PLIERS</h3></a>
         </div>
       </div>
       <div class="tool-card-content py-2">

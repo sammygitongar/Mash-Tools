@@ -160,6 +160,10 @@
     margin-bottom: 20px;
 }
 
+.st1{
+    display: none;
+}
+
 .selected-tools h4{
     color: rgb(26, 93, 95);
 }

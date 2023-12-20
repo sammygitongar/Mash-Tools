@@ -108,9 +108,7 @@
                 <div class="st">
 
                 </div>
-                <div class="st1">
-
-                </div>
+                <div class="st1"></div>
              </div>
              <button id="submit-form" onclick="submitForm()">Submit</button>
           </div>
@@ -129,125 +127,7 @@
 
 
 
-<script>
 
-    document.getElementById("add-tool").addEventListener('click', function(event){
-    event.preventDefault();
-    });
-
-    document.querySelector("#submit-form").addEventListener('click', function(event){
-        event.preventDefault();
-      });
-
-    
-
-    
-
-    
-  
-
-    function addTool(){
-    const tool = document.getElementById("tools");
-    const parentDiv = document.querySelector(".st");
-    const parentDiv1 = document.querySelector(".st1")
-
-
-    let selectedTool;
-    const div = document.createElement("div");
-    const div1 = document.createElement("div");
-
-
-    
-
-    
-    div.classList.add("selected-tools-inner");
-    div.setAttribute("id", "selected-tools-inner");
-
-    div1.classList.add("selected-tools-inner1");
-    div1.setAttribute("id", "selected-tools-inner1");
-
-
-    const toolInput = document.createElement("input");
-    toolInput.setAttribute("id", "selected-tool");
-    toolInput.setAttribute("type", "text");
-    toolInput.setAttribute("name", "selected-tool[]");
-
-
-    // toolInput.value = tool.value;
-
-
-    const qtyInput = document.createElement("input");
-    qtyInput.setAttribute("name", "selected-qty");
-    qtyInput.setAttribute("id", "selected-qty");
-
-    qtyInput.value = `${qty.value}`;
-
-
-
-    const qtyInput1 = document.createElement("input");
-    qtyInput1.setAttribute("name", "selected-qty[]");
-    // qtyInput.setAttribute("type", "number");
-    qtyInput1.setAttribute("id", "selected-qty");
-
-
-    qtyInput1.value = `${toolInput.value}[${qty.value}]`;
-
-
-    console.log(qtyInput.value);
-
-    div1.appendChild(toolInput);
-    div1.appendChild(qtyInput1);
-    parentDiv1.appendChild(div1);
-
-    toolInput.value = tool.value;
-    
-
-    div.appendChild(toolInput.cloneNode(true));  // Clone the toolInput for div1
-    div.appendChild(qtyInput);
-    parentDiv.appendChild(div);
-
-  };
-
- 
-  function submitForm (){
-    const parentDiv = document.querySelector('.selected-tools');
-
-    const removeDiv = document.querySelector(".st");
-    parentDiv.removeChild(removeDiv);
-
-    const toolInput = parentDiv.querySelector('#selected-tool');
-    const qtyInput = parentDiv.querySelector("#selected-qty");
-
-    const users = document.querySelector("#users");
-
-    const toSubmitForm = document.createElement("form");
-    const submitBtn = document.createElement("button");
-    submitBtn.setAttribute("type", "submit");
-    submitBtn.setAttribute("name", "")
-    toSubmitForm.method = "POST";
-    toSubmitForm.action = "issueHandler.php";
-
-    toSubmitForm.appendChild(users);
-    toSubmitForm.appendChild(parentDiv);
-    toSubmitForm.appendChild(submitBtn);
-
-
-    document.body.appendChild(toSubmitForm);
-
-    toSubmitForm.style.display = "none";
-
-
-    toSubmitForm.submit();
-
-
-    console.log(toSubmitForm);
-
-
-  }
-
-
-
-</script>
 
 
 
